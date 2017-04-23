@@ -142,7 +142,7 @@ end
 
 <p>I think my solution was a little more straight forward but there way works too; I didn't think to use the subtract the floor of the quotient from the float quotient.</p>
 
-<p>In addition, it looks like there was an expert question that was in the solutions but not in the exercise itself:</p>
+<p>In addition, it looks like there was an expert question that was included in the solutions but not in the exercise itself:</p>
 
 {% highlight ruby %}
 
