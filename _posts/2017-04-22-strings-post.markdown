@@ -27,7 +27,7 @@ def to_phone_number(arr)
 end
 {% endhighlight %}
 
-<p>This one was a little more tough since I didn't account for a few simple things that were happening. We're asked to produce a phone number in the format (123) 456-7890 give an array that has those numbers. So I started off thinking we can take the array and <i>sort</i> it and with that we can <i>join</i> together it's values to get a <strong>string</strong>. This was actually the right though process but here's how I defined my phone_number variable initially:</p>.
+<p>This one was a little more tough since I didn't account for a few simple things that were happening. We're asked to produce a phone number in the format (123) 456-7890 give an array that has those numbers. So I started off thinking we can take the array and <i>sort</i> it and with that we can <i>join</i> together it's values to get a <strong>string</strong>. This was actually the right though process but here's how I defined my phone_number variable initially:</p>
 
 <p><i>phone_number =  "(" + num_str[0..2] + ") " + num_str[3..5] + "-" + num_str[6..9]</i></p>
 
