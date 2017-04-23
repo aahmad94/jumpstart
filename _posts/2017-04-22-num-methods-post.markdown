@@ -108,9 +108,6 @@ end
 # Write a method that returns the decimal remainder of dividing two integers.
 # HINT: Use dec_remainder_of_two_floats as a helper method,
 # but don't forget to pass the proper type of argument
-def dec_remainder_of_two_integers(i_dividend, i_divisor)
-  return dec_remainder_of_two_floats(i_dividend.to_f, i_divisor.to_f)
-  # your code goes here
-end
+
 
 {% highlightend %}
