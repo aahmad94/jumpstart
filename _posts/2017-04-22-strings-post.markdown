@@ -49,4 +49,4 @@ end
 
 <p>My mistake here was also a simple one; I forgot that when we <i>split</i> a string into an array, the elements in the array are all in there as strings. Since all the string values in the array are <i>numerical</i> (as opposed to numerical and alphabetical), we can <i>sort</i> the array without any issues.</p>
 
-<p>My problem, however, came when we had to access elements from the array and use them in a mathematical operation to obtain the range. I tried to to set the range equal to <i>array_ordered[-1] - array_ordered[0]</i>. Unfortunately, we can't do that since the element being accessed is a string, we have to convert it into an integer, which I then did, with the <i>to_i</i> method.</p>
+<p>My problem, however, came when we had to access elements from the array and use them in a mathematical operation to obtain the range. I tried to to set the range equal to <i>array_ordered[-1] - array_ordered[0]</i>. Unfortunately, we can't do that since the element being accessed is a string; we have to convert it into an integer, which I then did, with the <i>to_i</i> method.</p>
