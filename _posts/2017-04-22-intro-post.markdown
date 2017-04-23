@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: Hello World!
+title: hello world!
 date: 2017-04-22 11:40:00
 ---
 
