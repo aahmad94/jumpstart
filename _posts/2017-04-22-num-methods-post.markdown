@@ -112,4 +112,5 @@ def dec_remainder_of_two_integers(i_dividend, i_divisor)
   return dec_remainder_of_two_floats(i_dividend.to_f, i_divisor.to_f)
   # your code goes here
 end
-{%highlightend%}
+
+{% highlightend %}
