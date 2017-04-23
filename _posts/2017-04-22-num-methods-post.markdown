@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ruby numerical methods exercise 
-date 2017-04-22 22:00:00
+date: 2017-04-22 22:00:00
 ---
 <p>Just finished the numerical methods exercise from App Academy's JumpStart preparation curriculum. I initially had 22/26 points correct. I didn't fully note the difference between the decimal remainder it wanted and the float remainder I had it spitting out. After troubleshooting I realized it wanted the float remainder divided by the float divisor. Time to take a break and watch the new Samurai Jack!</p> 
 
