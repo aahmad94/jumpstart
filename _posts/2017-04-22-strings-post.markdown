@@ -42,8 +42,8 @@ end
 <p>I realized the problem actually gave us an array whose numbers were already sorted in the format <i>[1,2,3,4,5,6,7,8,9,0]</i>. This means we could've also solved it by simply <i>joining</i> the elements in the proper format:</p>
 
 <center><p><i>chunk_one = arr[0..2].join<br>
-chunk_two = arr[3..5]<br>
-chunk_three = arr[6..9]<br>
+chunk_two = arr[3..5].join<br>
+chunk_three = arr[6..9].join<br>
 phone_number = "(" + chunk_one + ")" + " " + chunk two + "-" + chunk_three</i></p></center>
 
 {% highlight ruby %}
