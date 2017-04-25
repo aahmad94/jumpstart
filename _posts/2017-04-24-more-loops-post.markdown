@@ -4,7 +4,7 @@ title: ruby logic and control flow exercise
 date: 2017-04-25 0:30:00
 ---
 <h3>I finished the logic and control flow exercise!</h3>
-<p>The exercises were fairly straight forward, some required more thought than others. The methods actually do some pretty cool things and knowing how the method was put together just adds some extra satisfaction. I had to think about the prompt that required reverse engineering the <i>join</i> method for awhile but when I finally got it working it was well worth the patience! I posted App Academ's solutions in the bottom. I actually just looked at the solutions and realized the prompt never said we couldn't use the <i>join</i> method in the prompt requiring us to <i>join</i> elements in an array into a string... <strong>yikes</strong>. Well it should be interesting to look over the differences between our lines of code!</p>
+<p>The exercises were fairly straight forward, some required more thought than others. The methods actually do some pretty cool things and knowing how the method was put together just adds some extra satisfaction. I had to think about the prompt that required reverse engineering the <i>join</i> method for awhile but when I finally got it working it was well worth the patience! I posted App Academy's solutions in the bottom. I actually just looked at the solutions and realized the prompt never said we couldn't use the <i>join</i> method in the prompt requiring us to <i>join</i> elements in an array into a string... <strong>yikes</strong>. Well it should be interesting to look over the differences between our lines of code!</p>
 
 {% highlight ruby %}
 # EASY 
