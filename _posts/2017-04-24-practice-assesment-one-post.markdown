@@ -4,7 +4,7 @@ title: app academy's practice assesment one
 date: 2017-04-25 12:30:00
 ---
 
-<h3>I finished App Academy's practice assement one.</h3>
+<h3>I finished app academy's practice assement one.</h3>
 
 <p>I completed the first two problems fairly quickly (~10 min) but I had to play around with the magic numbers prompt, mostly because I didn't fully understand the prompt initially, which is why you shouldn't rush reading over the prompts! I thought it wanted us to list whether an integer, n, contained numbers that add to 7. When I realized that was wrong, I thought they wanted the method to return all integers that contain numbers that add up to 7 up to integer n. When I finally realized they wanted the method to spit out the first n number of integers that add to 7, I came to my final setup. App Academy's solutions follow mine below.</p>
 
