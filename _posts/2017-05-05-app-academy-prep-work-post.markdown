@@ -4,9 +4,9 @@ title: app academy's additional assessment one prep work
 date: 2017-05-05 01:15:00
 ---
 
-<center>
-
 <h3>There's 20 create-your-own-method type questions that range from easy to hard in the package below: </h3>
+
+<center>
 
 <p><a href="https://github.com/aahmad94/app_academy_prep_work"><h4>app-academy-prep-work</h4></a></p>
 
