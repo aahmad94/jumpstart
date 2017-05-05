@@ -33,4 +33,4 @@ date: 2017-05-05 01:15:00
 
 </center>
 
-<br><p>I worked on and off on the 20 methods for about a week but I took lots of breaks! I'm sure there's lots of other ways to set these up but I think working through these without seeing a solution helps with getting to know the ins and outs of Ruby and structuring code to solve a particular problem.</p></br>
+<br>I worked on and off on the 20 methods for about a week but I took lots of breaks! I'm sure there's lots of other ways to set these up but I think working through these without seeing a solution helps with getting to know the ins and outs of Ruby and structuring code to solve a particular problem.
