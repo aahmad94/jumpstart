@@ -31,6 +31,6 @@ date: 2017-05-05 01:15:00
 19-caesar-cipher.rb<br>
 20-num-repeats.rb
 
-</center><br>
+</center>
 
-<p>I worked on and off on the 20 methods for about a week but I took lots of breaks! I'm sure there's lots of other ways to set these up but I think working through these without seeing a solution helps with getting to know the ins and outs of Ruby and structuring code to solve a particular problem.</p> 
+<br><p>I worked on and off on the 20 methods for about a week but I took lots of breaks! I'm sure there's lots of other ways to set these up but I think working through these without seeing a solution helps with getting to know the ins and outs of Ruby and structuring code to solve a particular problem.</p></br>
