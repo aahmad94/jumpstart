@@ -10,7 +10,6 @@ date: 2017-05-05 01:15:00
 
 <p><a href="https://github.com/aahmad94/app_academy_prep_work"><h4>app-academy-prep-work</h4></a></p>
 
-<h4> 
 00-reverse.rb<br>
 01-factorial.rb<br>
 03-sum-nums.rb<br>
@@ -31,7 +30,6 @@ date: 2017-05-05 01:15:00
 18-greatest-common-factor.rb<br>
 19-caesar-cipher.rb<br>
 20-num-repeats.rb<br>
-</h4>
 
 </center>
 
