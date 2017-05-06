@@ -71,7 +71,7 @@ def any_even?(arr)
 end
 {% endhighlight %}
 
-<h3>The <i>reduce</i> or <i>indject</i> enumerable can be invoked in three ways. Whenever you find yourself setting a variable you reference throughout an iteration, consider using reduce to simplify your code.</h3>
+<h4>The <i>reduce</i> or <i>inject</i> enumerable can be invoked in three ways. Whenever you find yourself setting a variable you reference throughout an iteration, consider using reduce to simplify your code.</h4>
 
 <p><b>1.</b> With one binary argument (:+ or :lcm, for example):</p>
 
