@@ -50,4 +50,4 @@ def two_sum(array, target)
   end
   false
 end
-{% endhighlight}
+{% endhighlight %}
