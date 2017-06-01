@@ -3,16 +3,17 @@ layout: post
 title: jumpstart hw 2 cats in hats
 date: 2017-05-31 18:00:00
 ---
-<h4>You have 100 cats.</n>
+<h4>You have 100 cats.<\n>
 
- Your rules are simple: whenever you visit a cat, you toggle it's hat status (if it
+ <p>Your rules are simple:</p>
+ <p>whenever you visit a cat, you toggle it's hat status (if it
  already has a hat, you remove it.. if it does not have a hat, you put one on).
  All of the cats start hat-less. You cycle through 100 rounds of visiting cats.
  In the 1st round, you visit every cat. In the second round, you visit every other cat.
  In the nth round, you visit every nth cat.. until the 100th round, in which you only
- visit the 100th cat.</n>
+ visit the 100th cat.<\p>
 
- At the end of 100 rounds, which cats have hats?</h4>
+ <p> At the end of 100 rounds, which cats have hats?</p></h4>
 
 <p><strong>1.</strong> Using a counter hash:</p>
 
