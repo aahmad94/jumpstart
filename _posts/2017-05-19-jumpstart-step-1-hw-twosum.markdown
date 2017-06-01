@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jumpstart step 1 hw two_sum
+title: jumpstart 1 hw two sum
 date: 2017-05-19 03:00:00
 ---
 <h3>Define a method, #two_sum, that accepts an array and a target sum (integer) as arguments.</h3>
@@ -9,19 +9,19 @@ date: 2017-05-19 03:00:00
 
 {% highlight ruby %}
 def two_sum(array, target)
-  
-  o_count = 0 
-  while o_count < array.length 
-  
+
+  o_count = 0
+  while o_count < array.length
+
     i_count = o_count + 1
-    while i_count < array.length 
-    
+    while i_count < array.length
+
       test_sum = array[o_count] + array[i_count]
-      
+
       if test_sum == target
         return true
       end
-      
+
       i_count += 1
     end
     o_count += 1

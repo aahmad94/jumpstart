@@ -38,9 +38,6 @@ date: 2017-05-31 18:00:00
       hats_on_positions << k # push k (cat position) to result array
     end
   end
-
-  hats_on_positions
-
 {% endhighlight %}
 
  <p><strong>2.</strong> Modifying the "hat" (true/false) values in an array:</p>
