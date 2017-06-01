@@ -18,7 +18,7 @@ date: 2017-05-31 18:00:00
 <p><strong>1.</strong> Using a counter hash to track (via incrementing the count) whether cats' hats are on or off (evens ~ hats off, odds ~ hats on):</p>
 
 {% highlight ruby %}
-def cats_in_hats
+ def cats_in_hats
 
   litter = {}
   positions = (1..100).to_a
@@ -39,7 +39,7 @@ def cats_in_hats
     end
   end
   hats_on_positions
-end
+ end
 {% endhighlight %}
 
  <p><strong>2.</strong> Modifying the "hat" (true/false) values in an array:</p>
