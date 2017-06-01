@@ -4,8 +4,7 @@ title: jumpstart 2 hw cats in hats
 date: 2017-05-31 18:00:00
 ---
 <h4>
- <p>You have 100 cats.<br>
- Your rules are simple:</p>
+ <p>You have 100 cats. Your rules are simple:</p>
  <p>whenever you visit a cat, you toggle it's hat status (if it
  already has a hat, you remove it... if it does not have a hat, you put one on).
  All of the cats start hat-less. You cycle through 100 rounds of visiting cats.
