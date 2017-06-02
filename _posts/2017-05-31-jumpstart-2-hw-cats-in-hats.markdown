@@ -19,25 +19,18 @@ date: 2017-05-31 18:00:00
 {% highlight ruby %}
 def cats_in_hats
 
-  litter = {}
-  positions = (1..100).to_a
-  positions.each {|num| litter[num] = 0} # populate hash with cat positions and no hats (even)
+  litter = Hash.new(0)
 
-  positions.each do |visit| # track visit number (100 in total)
+  (1..100).each do |visit| # track visit number (100 in total)
     count = visit
-    while count <= positions.max  # hatting corresponds to adding 1 to an odd (unhatted) value
+    while count <= 100  # hatting corresponds to adding 1 to an even (unhatted) value (0 ~ even)
       litter[count] += 1
       count += visit # hatting frequency dependent on visit number
     end
   end
 
-  hats_on_positions = [] # result array
-  litter.each do |k, v|
-    if v % 2 != 0 # if value is odd (hatted),  
-      hats_on_positions << k # push k (cat position) to result array
-    end
-  end
-  hats_on_positions
+  litter.select {|k, v| k if v % 2 != 0}.keys # if value is odd (hatted), get cat position (key)
+
 end
 {% endhighlight %}
 
