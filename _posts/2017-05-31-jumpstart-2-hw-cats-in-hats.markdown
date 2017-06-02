@@ -21,9 +21,9 @@ def cats_in_hats
 
   litter = {}
   positions = (1..100).to_a
-  positions.to_a.each {|num| litter[num] = 0} # populate hash with cat positions and no hats (even)
+  positions.each {|num| litter[num] = 0} # populate hash with cat positions and no hats (even)
 
-  positions.to_a.each do |visit| # track visit number (100 in total)
+  positions.each do |visit| # track visit number (100 in total)
     count = visit
     while count <= positions.max  # hatting corresponds to adding 1 to an odd (unhatted) value
       litter[count] += 1
