@@ -4,7 +4,7 @@ title: covfefe is funfefe
 date: 2017-06-02 13:00:00
 ---
 
-<h3>Your are given a string. You must replace the word(s) coverage by covfefe, however, if you don't find the word coverage in the string, you must add it at the end of the string with a leading space.</h3>
+<h4>Your are given a string. You must replace the word(s) coverage by covfefe, however, if you don't find the word coverage in the string, you must add it at the end of the string with a leading space.</h4>
 
 {% highlight ruby %}
 def covfefe(tweet)
@@ -17,4 +17,4 @@ def covfefe(tweet)
 end
 {% endhighlight %}
 
-<p>Twitter needs to implement this script into their platform!</p>
+<h4>Twitter needs to implement this script into their platform ¯\_(ツ)_/¯</h4>
