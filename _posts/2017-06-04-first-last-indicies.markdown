@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jumpstart 2 first and last indicies
+title: jumpstart 2 first and last indicies & thoughts on helper methods
 date: 2017-06-04 10:30:00
 ---
 
@@ -31,6 +31,6 @@ def first_last_indices(str)
   end
   chrs_indicies
 end
-{% endhighlight %}
+{% endhiighlight %}
 
-<p>I didn't use helper method and I usually don't for these things. I love the top-down approach and, for me at least, it's difficult to think clearly when fragmenting your thoughts on any particular solution. I do, however, think refactoring at the end is crucial when you're working on a larger scale for both readability and scalability. In this case, if I really wanted to, I could create a helper method to return <i>indicies</i> which I would use in the main method to assign a value for each unique character in a hash.</p>
+<p>I didn't use a helper method and I usually don't for these things. I love the top-down approach and, for me at least, it's difficult to think clearly when fragmenting your thoughts on any particular solution. I do, however, think refactoring at the end is crucial when you're working on a larger scale for both readability and scalability. In this case, if I really wanted to, I could create a helper method to return <i>indicies</i> which I would use in the main method to assign a value for each unique character in a hash.</p>
