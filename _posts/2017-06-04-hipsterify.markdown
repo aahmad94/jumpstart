@@ -7,7 +7,7 @@ date: 2017-06-04 13:30:00
 <h4>Define a method, #hipsterfy, that accepts a sentence (string) as an argument.
 The method should return a new string with the last vowel removed from each word.</h4>
 
-<p><strong>1.</strong Using an array to track indices:</p>
+<p><strong>1.</strong> Using an array to track indices:</p>
 
 {% highlight ruby %}
 def hipsterfy(sentence)
@@ -29,7 +29,7 @@ def hipsterfy(sentence)
 end
 {% endhighlight %}
 
-<p><strong>1.</strong Using a hash to track indices:</p>
+<p><strong>1.</strong> Using a hash to track indices:</p>
 
 {% highlight ruby %}
 def hipsterfy(sentence)
