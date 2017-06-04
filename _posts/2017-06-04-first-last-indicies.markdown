@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jumpstart 2 char indices and thoughts on helper methods
+title: jumpstart 2 thoughts on helper methods
 date: 2017-06-04 11:08:00
 ---
 
