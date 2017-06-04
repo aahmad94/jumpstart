@@ -1,7 +1,7 @@
 ---
 layout: post
-title: jumpstart 2 char indicies and thoughts on helper methods
-date: 2017-06-04 10:30:00
+title: jumpstart 2 char indices and thoughts on helper methods
+date: 2017-06-04 11:00:00
 ---
 
 <h4>Write a method that, given a string, returns a hash in which each key is a character in the string and each value is an array of the first and last indices where that character occurs. If the character occurs only once, the array should contain a single index. Consider defining helper methods.</h4>
