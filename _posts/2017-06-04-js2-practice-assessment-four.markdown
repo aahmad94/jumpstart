@@ -9,7 +9,7 @@ def substring?(long_string, short_string)
   long_string.include?(short_string)
 end
 {% endhighlight %}
-<h1>test</h1>
+
 <h4>Write a method that, given a string, returns a hash in which each key is a character in the string and each value is an array of the first and last indices where that character occurs. If the character occurs only once, the array should contain a single index. Consider defining helper methods.</h4>
 
 {% highlight ruby %}
