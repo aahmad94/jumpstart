@@ -29,7 +29,7 @@ def hipsterfy(sentence)
 end
 {% endhighlight %}
 
-<p><strong>1.</strong> Using a hash to track indices:</p>
+<p><strong>2.</strong> Using a hash to track indices:</p>
 
 {% highlight ruby %}
 def hipsterfy(sentence)
