@@ -14,12 +14,11 @@ def anagrams?(str1, str2)
   str2_chars_count = Hash.new(0)
   str2.split("").each {|chr| str2_chars_count[chr] += 1}
 
-  str1_chars_count.all? {|k,v| str1_chars_count[k] == str2_chars_count[k]}
+  str1_chars_count.all? {|k,_| str1_chars_count[k] == str2_chars_count[k]}
 
 end
 
 # An isogram is a word of only non-repeating letters. Define a method that, given two isograms of the same length, returns an array of two elements indicating matches: the first number is the number of letters matched in both words at the same position, and the second is the number of letters matched in both words but not in the same position.
-
 def isogram_matcher(isogram1, isogram2)
   match_position = 0
   match_chr_not_position = 0
@@ -37,7 +36,6 @@ def isogram_matcher(isogram1, isogram2)
 end
 
 # You have a panoramic view in front of you, but you only can take a picture of two landmarks at a time (your camera is small). You want to capture every pair of landmarks that are next to each other. Define a method that, given an array of landmarks, returns an array of every adjacent pair from left to right. Assume the panorama wraps around.
-
 def panoramic_pairs(landmarks)
   result = []
   landmarks.each_index {|idx| (idx.to_i == landmarks.length - 1) ? result << [landmarks[idx], landmarks[0]] : result << [landmarks[idx], landmarks[idx+1]]}
@@ -74,4 +72,6 @@ def xbonacci(starting_sequence, number_of_xbonacci_numbers_to_return)
   end
   starting_sequence
 end
+
+require_relative "test.rb"
 {% endhighlight %}
