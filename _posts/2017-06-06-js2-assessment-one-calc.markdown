@@ -4,7 +4,7 @@ title: jumpstart 2 assessment one calculator
 date: 2017-06-06 12:00:00
 ---
 
-<h4>Calculator<br>
+<h4><p>Calculator</p>
 
 <p>You are given a hash with letters as keys and mathematical operators as values,
 an input array of numbers and letters, and a starting value.</p>

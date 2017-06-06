@@ -4,23 +4,23 @@ title: jumpstart 2 assessment one transposing matrices
 date: 2017-06-06 11:00:00
 ---
 
-<h4>Transpose<br>
+<h4><p>Transpose</p>
 
-You are given a n * n 2D matrix<br>
-
+<p>You are given a n * n 2D matrix<br>
 Example:<br>
 Matrix = [[1, 2],
-         [3, 4]]<br>
+         [3, 4]]</p>
 
-Write a method that will transpose a matrix. The transpose of a matrix is
+<p>Write a method that will transpose a matrix. The transpose of a matrix is
 obtained by turning all of the columns of a matrix into the rows and vice versa.
-So an element at index ij would be at index ji once tranposed.
-For example:<br>
+So an element at index ij would be at index ji once tranposed.</p>
+
+<p>For example:
 
 transpose(Matrix) = [[1, 3],
-    								[2, 4]]<br>
+    								[2, 4]]</p>
 
-You may assume a square matrix as input. Do not use `.transpose`</h4>
+<p>You may assume a square matrix as input. Do not use `.transpose`</p></h4>
 
 <p>My solution using a hash to store all elements at a particular index</p>
 {% highlight ruby %}
