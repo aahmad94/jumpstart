@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jumpstart 2 assessment 01 transposing matrices
+title: jumpstart 2 assessment one transposing matrices
 date: 2017-06-06 11:00:00
 ---
 
@@ -9,7 +9,7 @@ date: 2017-06-06 11:00:00
 You are given a n * n 2D matrix<br>
 
 Example:<br>
-Matrix = [[1, 2],<br>
+Matrix = [[1, 2],
          [3, 4]]<br>
 
 Write a method that will transpose a matrix. The transpose of a matrix is
@@ -17,7 +17,7 @@ obtained by turning all of the columns of a matrix into the rows and vice versa.
 So an element at index ij would be at index ji once tranposed.
 For example:<br>
 
-transpose(Matrix) = [[1, 3],<br>
+transpose(Matrix) = [[1, 3],
     								[2, 4]]<br>
 
 You may assume a square matrix as input. Do not use `.transpose`</h4>
@@ -40,7 +40,7 @@ end
 
 <p>These are the corresponding test cases that must pass as true:</p>
 {% highlight ruby %}
-puts "-------Transpose-------"
+<!-- puts "-------Transpose-------"
 matrix_one = [[1, 2],
 							[3, 4]]
 matrix_two = [[1, 4, 7],
@@ -58,5 +58,5 @@ puts transpose(matrix_two) == [[1, 2, 3],
 puts transpose(matrix_three) == [[1, 5, 9, 13],
  																	 [2, 6, 10, 14],
 																	 [3, 7, 11, 15],
-																	 [4, 8, 12, 16]]
+																	 [4, 8, 12, 16]] -->
 {% endhighlight %}

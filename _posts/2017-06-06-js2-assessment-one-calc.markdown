@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jumpstart 2 assessment 01 calculator
+title: jumpstart 2 assessment one calculator
 date: 2017-06-06 12:00:00
 ---
 
