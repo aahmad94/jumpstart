@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jumpstart 2 assessment 01: transposing matrices
+title: jumpstart 2 assessment 01 transposing matrices
 date: 2017-06-06 11:00:00
 ---
 
