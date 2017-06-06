@@ -54,13 +54,12 @@ end
 {% endhighlight %}
 
 <p>These are the corresponding test cases that must pass as true:</p>
-{% endhighlight %}
+{% highlight ruby %}
 puts "---------Calculater---------"
-
 hash = {"a" => "+", "z" => "*", "t" => "/"}
 hash2 = { "y" => "*", "r" => "/", "u" => "-"}
 puts calculater(hash, ["z", 5, "t", 8], 9) == 5
 puts calculater(hash, ["z", 5, "z", 3], 3) == 45
 puts calculater(hash2, ["a", 5, "y", 7, "r", 9, "u", 4], 8) == 2
 puts calculater(hash2, ["y", 5, "u", 20, "r", 9, "y", 4], 0) == -12
-{% highlight ruby %}
+{% endhighlight %}
