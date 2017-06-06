@@ -4,22 +4,21 @@ title: jumpstart 2 assessment one calculator
 date: 2017-06-06 12:00:00
 ---
 
-<h4>Calculater<br>
+<h4>Calculator<br>
 
-You are given a hash with letters as keys and mathematical operators as values,
-an input array of numbers and letters, and a starting value<br>
+<p>You are given a hash with letters as keys and mathematical operators as values,
+an input array of numbers and letters, and a starting value.</p>
 
-Write a method that goes takes the start value then goes through the input array
+<p>Write a method that goes takes the start value then goes through the input array
 performing the operation on the accumulated output and up until that point
 and the next number in the array. If a letter in the input does not appear in
-the hash, skip it and the number after it<br>
+the hash, skip it and the number after it.</p>
 
-Example:<br>
+<p>Example:<br>
 hash = {"a" => "+", "z" => "*", "t" => "/"}<br>
 input = ["z", 5, "t", 8]<br>
 start = 9<br>
-
-calculater(hash, input, start) = 5 (remember integer division!)</h4>
+calculater(hash, input, start) = 5 (remember integer division!)</p></h4>
 
 <p>Hard coded solution:</p>
 {% highlight ruby %}

@@ -40,7 +40,7 @@ end
 
 <p>These are the corresponding test cases that must pass as true:</p>
 {% highlight ruby %}
-<!-- puts "-------Transpose-------"
+puts "-------Transpose-------"
 matrix_one = [[1, 2],
 							[3, 4]]
 matrix_two = [[1, 4, 7],
@@ -58,5 +58,5 @@ puts transpose(matrix_two) == [[1, 2, 3],
 puts transpose(matrix_three) == [[1, 5, 9, 13],
  																	 [2, 6, 10, 14],
 																	 [3, 7, 11, 15],
-																	 [4, 8, 12, 16]] -->
+																	 [4, 8, 12, 16]]
 {% endhighlight %}
