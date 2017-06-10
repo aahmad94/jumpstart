@@ -1,6 +1,6 @@
 ---
 layout: post
-title: app academy's practice assesment one
+title: app academy's practice assesment 1
 date: 2017-04-25 12:30:00
 ---
 
@@ -13,21 +13,21 @@ date: 2017-04-25 12:30:00
 # sum_to(3) => 6
 
 def sum_to(int)
-  
+
   value = 0
-  
+
   counter = 1
-  
+
   while counter <= int
-  
+
     value += counter
-    
+
     counter += 1
-    
+
   end
-  
+
   return value
-  
+
 end
 
 # Define a method, #e_words(str), that accepts a string as an argument. Your method return the number of words in the string that end with the letter "e".
@@ -35,77 +35,77 @@ end
 # e_words("Let be be finale of seem.") => 3
 
 def e_words(str)
-  
+
   result = 0
-  
+
   el = str.split(" ")
-  
-  count = 0 
-  
+
+  count = 0
+
   while count < el.length
-    
+
     if el[count][-1] == "e"
-      
+
       result += 1
-    
+
     end
-      
+
     count += 1  
-      
+
   end
-  
+
   return result
-  
+
 end
 
 # A magic number is a number whose digits, when added together, sum to 7, e.g., 34. Define a method that returns an array of the first n magic numbers. You may wish to write a helper method (magic_number?) that returns a boolean indicating whether a number is magic. This problem is harder than anything you'll receive on the coding assessment.
 # magic_numbers(3) => [7, 16, 25]
 
 def magic_number?(n)
-  
+
   result = 0
-  
+
   arr = n.to_s.split("")
-  
+
   count = 0
-  
+
   while count < arr.length
-  
-    result += arr[count].to_i 
-    
+
+    result += arr[count].to_i
+
     count += 1
-    
+
   end
-  
+
   if result == 7
-    
+
     return true
-    
+
   end
-    
+
 end
 
 def magic_numbers(n)
-  
+
   magic_numbers = []
-  
+
   num = 0
 
   while magic_numbers.length < n
-  
+
     el = num += 1
-    
+
     if magic_number?(el) == true
-      
+
       magic_numbers << el
-      
+
     end
-    
+
   end
-  
+
   return magic_numbers
-  
-end 
+
+end
 {% endhighlight %}
 
 <h3>Solutions</h3>

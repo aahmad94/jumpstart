@@ -1,6 +1,6 @@
 ---
 layout: post
-title: app academy's additional assessment one prep work 
+title: app academy's additional assessment 1 prep work 
 date: 2017-05-05 01:15:00
 ---
 
@@ -10,7 +10,7 @@ date: 2017-05-05 01:15:00
 
 <p><a href="https://github.com/aahmad94/app_academy_prep_work"><h4>my solutions for prep work</h4></a></p>
 <p><a href="https://github.com/aahmad94/app_academy_prep_work_solutions"><h4>app academy solutions for prep work</h4></a></p>
- 
+
 
 00-reverse.rb<br>
 01-factorial.rb<br>
