@@ -1,13 +1,14 @@
 ---
 layout: post
-title: jumpstart two assessment two
+title: jumpstart 2 assessment 2
 date: 2017-06-09 12:00:00
 ---
 
 <h3>I passed the second assessment!</h3>
 
 <p>I actually got stuck on the last one because I read the problem wrong; I though it wanted us to put all possible permutations of a string whereas it only wanted us to
- show the substrings present in the original string--this is why I need to not panic and slow down during these sort of timed assessments ¯\_(ツ)_/¯.</p> 
+ show the substrings present in the original string--this is why I need to not panic and slow down during these sort of timed assessments ¯\_(ツ)_/¯.</p>
+
 {% highlight ruby %}
 ### Missing Numbers
 #
@@ -110,5 +111,4 @@ puts "-------Substrings-------"
 puts substrings("") == []
 puts substrings("123") == ["1", "12", "123", "2", "23", "3"]
 puts substrings("ruby") == ["b", "by", "r", "ru", "rub", "ruby", "u", "ub", "uby", "y"]
-
-{% end highlight %}
+{% endhighlight %}
