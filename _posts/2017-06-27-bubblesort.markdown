@@ -20,13 +20,12 @@ def bubble_sort(arr)
   while count < arr.length - 1
     (arr.length - 1).times do |idx|
       if arr[idx] > arr[idx + 1]
-        arr[idx], arr[idx + 1] = arr[idx + 1], arr[idx1]
+        arr[idx], arr[idx + 1] = arr[idx + 1], arr[idx]
       end
-
     end
     count += 1
   end
-  p arr
+  arr
 end
 
 puts("\nTests for #bubble_sort")
