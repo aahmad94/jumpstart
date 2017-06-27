@@ -6,7 +6,7 @@ date: 2017-06-27 19:00:00
 
 <h4>Bubble sort is a simple comparison algorithm that iterates through each element in the list until it's sorted.</h4>
 
-<p>The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort.[2] It can be practical if the input is usually in sorted order but may occasionally have some out-of-order elements nearly in position.</p>
+<p>The algorithm is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. It can be practical if the input is usually in sorted order but may occasionally have some out-of-order elements nearly in position.</p>
 
 {% highlight ruby %}
 # Write a function `bubble_sort(arr)` which will sort an array of
