@@ -8,7 +8,7 @@ Procs connect parts of the program together and make values flow to where theyâ€
 </h4>
 
 {% highlight ruby %}
-greeting = Proc.new { |name| "Hello #{name}"}
+greeting = Proc.new { |name| "Hello #{name}" }
 greeting.call("Adeel")
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ Ruby gives us a shortcut for when passing blocks with a single argument. When #t
 {% endhighlight %}
 
 <h4>
-What are lambdas and how are they different from procs? Let's first go over lambda notation?
+What are lambdas and how are they different from procs?
 </h4>
 
 <h4>
@@ -61,16 +61,17 @@ What are lambdas and how are they different from procs? Let's first go over lamb
 </h4>
 
 {% highlight ruby %}
+# there are two lambda notation:
 lambda = -> (name) { puts "hello #{{name}}" } # lambda literal or dash rocket notation
-lambda = lambda { |name| puts "hello #{{name}}" } # this expression is equivalent to the one in the line above
-lambda.call("john") # => hello john
-# lambda.call => ArgumentError
+lambda = lambda { |name| puts "Hello #{{name}}" } # block notation, this expression is equivalent to the one in the line above
+lambda.call("John") # => Hello John
+lambda.call # => ArgumentError
 
 # here's the equivalent expression using a proc:
 
-not_lambda = Proc.new { |name| puts "hello #{{name}}" }
-not_lambda.call("john") # => hello john
-not_lambda.call # => hello
+not_lambda = Proc.new { |name| puts "Hello #{{name}}" }
+not_lambda.call("John") # => Hello John
+not_lambda.call # => Hello
 {% endhighlight %}
 
 <h4>
