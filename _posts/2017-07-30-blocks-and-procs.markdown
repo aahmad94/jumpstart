@@ -62,14 +62,14 @@ What are lambdas and how are they different from procs?
 
 {% highlight ruby %}
 # there are two lambda notation:
-lambda = -> (name) { puts "hello #{{name}}" } # lambda literal or dash rocket notation
-lambda = lambda { |name| puts "Hello #{{name}}" } # block notation, this expression is equivalent to the one in the line above
+lambda = -> (name) { puts "hello #{name}" } # lambda literal or dash rocket notation
+lambda = lambda { |name| puts "Hello #{name}" } # block notation, this expression is equivalent to the one in the line above
 lambda.call("John") # => Hello John
 lambda.call # => ArgumentError
 
 # here's the equivalent expression using a proc:
 
-not_lambda = Proc.new { |name| puts "Hello #{{name}}" }
+not_lambda = Proc.new { |name| puts "Hello #{name}" }
 not_lambda.call("John") # => Hello John
 not_lambda.call # => Hello
 {% endhighlight %}
