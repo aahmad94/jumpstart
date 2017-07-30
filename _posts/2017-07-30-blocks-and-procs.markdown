@@ -12,9 +12,9 @@ greeting = Proc.new { |name| "Hello #{name}"}
 greeting.call("Adeel")
 {% endhighlight %}
 
-<p>
+<h4>
 When defining a method that has a proc as a parameter the proc (object) cannot access the other parameters for that method unless the proc explicitly calls that value when the method is defined:
-</p>
+</h4>
 
 {% highlight ruby %}
 proc_add_1 = Proc.new {|num| num + 1}
@@ -37,12 +37,12 @@ def chain_blocks(start_val, proc1, proc2)
  yield(val2)
 end
 
-p chain_blocks(1, proc_add_1, proc_add_2) { |num| num + 3 }
+chain_blocks(1, proc_add_1, proc_add_2) { |num| num + 3 }
 {% endhighlight %}
 
-<p>
+<h4>
 Ruby gives us a shortcut for when passing blocks with a single argument. When #to_proc is called on a symbol, we get back a Proc object that calls the to_proc method with the same name as the symbol as a parameter:
-</p>
+</h4>
 
 {% highlight ruby %}
 ["a", "b", "c"].map { |s| s.upcase }
@@ -52,9 +52,13 @@ Ruby gives us a shortcut for when passing blocks with a single argument. When #t
 [1, 2, 5].select(&:odd?)
 {% endhighlight %}
 
-<p>
-What are lambdas and how are they different from procs? Let's first go over lambda notation:
-</p>
+<h4>
+What are lambdas and how are they different from procs? Let's first go over lambda notation?
+</h4>
+
+<h4>
+<strong>1.</strong> When a lambda expects an argument, you need to pass those arguments or an exception will be thrown. However, in the case of the Proc, if the argument is not passed it automatically defaults to nil.
+</h4>
 
 {% highlight ruby %}
 lambda = -> (name) { puts "hello #{{name}}" } # lambda literal or dash rocket notation
@@ -69,9 +73,9 @@ not_lambda.call("john") # => hello john
 not_lambda.call # => hello
 {% endhighlight %}
 
-<p>
-When a lambda expects an argument, you need to pass those arguments or an Exception will be thrown. However, in the case of the Proc, if the argument is not passed it automatically defaults to nil.
-</p>
+<h4>
+<strong>2.</strong> <i>When a lambda encounters a return statement it will return execution to the enclosing method. However, when a Proc encounters a return statement it will jump out of itself, as well as the enclosing method.</i>
+</h4>
 
 {% highlight ruby %}
 def lambda_method
@@ -88,7 +92,3 @@ end
 
 puts proc_method # => "I was called from inside the proc"
 {% endhighlight %}
-
-<p>
-When a lambda encounters a return statement it will return execution to the enclosing method. However, when a Proc encounters a return statement it will jump out of itself, as well as the enclosing method.
-</p>
