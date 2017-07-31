@@ -41,7 +41,7 @@ chain_blocks(1, proc_add_1, proc_add_2) { |num| num + 3 } # => 7
 {% endhighlight %}
 
 <h4>
-Ruby gives us a shortcut for when passing blocks with a single argument. When #to_proc is called on a symbol, we get back a Proc object that calls the to_proc method with the same name as the symbol as a parameter:
+Ruby gives us a shortcut for when passing blocks with a single argument. When #to_proc via #&is called on a symbol, we get back a block that calls the method with the same name as the symbol:
 </h4>
 
 {% highlight ruby %}
