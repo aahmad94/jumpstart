@@ -9,7 +9,7 @@ Procs connect parts of the program together and make values flow to where theyâ€
 
 {% highlight ruby %}
 greeting = Proc.new { |name| "Hello #{name}" }
-greeting.call("Adeel")
+greeting.call("Adeel") # => "Hello Adeel"
 {% endhighlight %}
 
 <h4>
@@ -17,8 +17,8 @@ When defining a method that has a proc as a parameter the proc (object) cannot a
 </h4>
 
 {% highlight ruby %}
-proc_add_1 = Proc.new {|num| num + 1}
-proc_add_2 = Proc.new {|num| num + 2}
+proc_add_1 = Proc.new { |num| num + 1 }
+proc_add_2 = Proc.new { |num| num + 2 }
 
 def chain_blocks(start_val, proc1, proc2, &proc3)
  val1 = proc1.call(start_val)
@@ -27,7 +27,7 @@ def chain_blocks(start_val, proc1, proc2, &proc3)
  val3
 end
 
-chain_blocks(1, proc_add_1, proc_add_2) { |num| num + 3 }
+chain_blocks(1, proc_add_1, proc_add_2) { |num| num + 3 } # => 7
 
 # with yield shorthand
 
@@ -37,7 +37,7 @@ def chain_blocks(start_val, proc1, proc2)
  yield(val2)
 end
 
-chain_blocks(1, proc_add_1, proc_add_2) { |num| num + 3 }
+chain_blocks(1, proc_add_1, proc_add_2) { |num| num + 3 } # => 7
 {% endhighlight %}
 
 <h4>
@@ -45,11 +45,13 @@ Ruby gives us a shortcut for when passing blocks with a single argument. When #t
 </h4>
 
 {% highlight ruby %}
-["a", "b", "c"].map { |s| s.upcase }
-[1, 2, 5].select { |i| i.odd? }
+["a", "b", "c"].map { |s| s.upcase } # => ["A", "B", "C"]
+[1, 2, 5].select { |i| i.odd? } # => [true, false, true]
 
-["a", "b", "c"].map(&:upcase)
-[1, 2, 5].select(&:odd?)
+# the below expressions are equivalent:
+
+["a", "b", "c"].map(&:upcase) # => ["A", "B", "C"]
+[1, 2, 5].select(&:odd?) # => [true, false, true]
 {% endhighlight %}
 
 <h4>
@@ -62,20 +64,22 @@ What are lambdas and how are they different from procs?
 
 {% highlight ruby %}
 # there are two lambda notation:
-lambda = -> (name) { puts "hello #{name}" } # lambda literal or dash rocket notation
-lambda = lambda { |name| puts "Hello #{name}" } # block notation, this expression is equivalent to the one in the line above
-lambda.call("John") # => Hello John
-lambda.call # => ArgumentError
+my_lambda = -> (name) { puts "hello #{name}" } # lambda literal or dash rocket notation
+my_lambda = lambda { |name| puts "Hello #{name}" } # block notation, this expression is equivalent to the one in the line above
+
+my_lambda.call("Adeel") # => "Hello Adeel"
+my_lambda.call # => ArgumentError
 
 # here's the equivalent expression using a proc:
 
-not_lambda = Proc.new { |name| puts "Hello #{name}" }
-not_lambda.call("John") # => Hello John
-not_lambda.call # => Hello
+my_proc = Proc.new { |name| puts "Hello #{name}" }
+
+my_proc.call("John") # => "Hello John"
+my_proc.call # => "Hello"
 {% endhighlight %}
 
 <h4>
-<strong>2.</strong> <i>When a lambda encounters a return statement it will return execution to the enclosing method. However, when a Proc encounters a return statement it will jump out of itself, as well as the enclosing method.</i>
+<strong>2.</strong> When a lambda encounters a return statement it will return execution to the enclosing method.<i> However, when a Proc encounters a return statement it will jump out of itself, as well as the enclosing method.</i>
 </h4>
 
 {% highlight ruby %}
