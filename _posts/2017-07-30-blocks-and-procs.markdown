@@ -41,7 +41,7 @@ chain_blocks(1, proc_add_1, proc_add_2) { |num| num + 3 } # => 7
 {% endhighlight %}
 
 <h4>
-Ruby gives us a shortcut for when passing blocks with a single argument. When #to_proc via #& is called on a symbol, we get back a block that calls the method with the same name as the symbol:
+Ruby gives us a shortcut for when passing blocks with a single argument. When #to_proc or, when applicable, the shorthand #& are called on a symbol, we get back a block that calls the method with the same name as the symbol:
 </h4>
 
 {% highlight ruby %}
@@ -52,6 +52,25 @@ Ruby gives us a shortcut for when passing blocks with a single argument. When #t
 
 ["a", "b", "c"].map(&:upcase) # => ["A", "B", "C"]
 [1, 2, 5].select(&:odd?) # => [true, false, true]
+
+# with #to_proc
+
+class Array
+  def first_and_last
+    [self.first, self.last]
+  end
+end
+
+class String
+  def first_and_last
+    [self[0], self[-1]]
+  end
+end
+
+symbolic_proc = :first_and_last.to_proc #=> #<Proc:0x007feb749b0070>
+symbolic_proc.call([1,2,3]) #=> [1, 3]
+symbolic_proc.call("ABCD") #=> ["A", "D"]
+["Hello", "Goodbye"].map(&:first_and_last) # => [["H", "o"], ["G", "e"]
 {% endhighlight %}
 
 <h4>
