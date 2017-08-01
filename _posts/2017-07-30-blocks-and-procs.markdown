@@ -75,11 +75,11 @@ symbolic_proc.call("ABCD") #=> ["A", "D"]
 
 <p>
 You may have noticed that the & appears in many places in the examples above. The & can be tricky because it does several things:<br>
-<li>
-  <ol>Converts blocks to procs</ol>
-  <ol>Converts method names (passed as symbols) to procs</ol>
-  <ol>Converts procs to blocks</ol>
-</li>
+<ol>
+  <li>Converts blocks to procs</li>
+  <li>Converts method names (passed as symbols) to procs</li>
+  <li>Converts procs to blocks</li>
+</ol>
 We have mostly seen the first two uses, but you should be aware of the third. For example, assume we have a method my_sort! that takes a block argument, like this:
 </p>
 
