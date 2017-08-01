@@ -73,15 +73,15 @@ symbolic_proc.call("ABCD") #=> ["A", "D"]
 ["Hello", "Goodbye"].map(&:first_and_last) # => [["H", "o"], ["G", "e"]]
 {% endhighlight %}
 
-<p>
-You may have noticed that the & appears in many places in the examples above. The & can be tricky because it does several things:<br>
+<h4>
+The & can be tricky because it does several things:<br>
 <ol>
   <li>Converts blocks to procs</li>
   <li>Converts method names (passed as symbols) to procs</li>
   <li>Converts procs to blocks</li>
 </ol>
-We have mostly seen the first two uses, but you should be aware of the third. For example, assume we have a method my_sort! that takes a block argument, like this:
-</p>
+Assume we have a method my_sort! that takes a block argument, like this:
+</h4>
 
 {% highlight ruby %}
 animals = ['cats', 'dog', 'badgers']
@@ -91,9 +91,9 @@ end
 animals # => ['dog', 'cats', 'badgers']
 {% endhighlight %}
 
-<p>
+<h4>
   We can easily define a non-bang version of this method like so:
-</p>
+</h4>
 
 {% highlight ruby %}
 class Array
@@ -103,9 +103,9 @@ class Array
 end
 {% endhighlight %}
 
-<p>
+<h4>
   The two uses of & in the above example do different things: the first one calls #to_proc on a block argument, creating a first-class proc object that we can refer to with prc. But #my_sort! expects a block argument, not a proc, so we can't simply pass it prc. Instead, when we call #my_sort!, we use & again, but this time & means the opposite of what it meant in the previous line; now & is changing the proc back into a block.
-</p>
+</h4>
 
 <h4>
 What are lambdas and how are they different from procs?
