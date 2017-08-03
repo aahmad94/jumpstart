@@ -1,6 +1,6 @@
 ---
 layout: post
-title: fizz buzz example with procs
+title: fizzbuzz example with procs
 date: 2017-08-03 15:00:00
 ---
 
