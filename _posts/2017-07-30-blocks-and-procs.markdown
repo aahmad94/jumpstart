@@ -1,7 +1,7 @@
 ---
 layout: post
 title: blocks and procs
-date: 2017-08-07 17:00:00
+date: 2017-07-30 17:00:00
 ---
 <h4>
 Procs connect parts of the program together and make values flow to where they’re needed.
