@@ -20,7 +20,7 @@ date: 2017-08-03 15:00:00
 end
 {% endhighlight %}
 
-<h4>Since making and calling procs are the only “actions” our program can perform, we can try implementing a number n with code that repeats the action of calling a proc n times.</h4>
+<p>Since making and calling procs are the only “actions” our program can perform, we can try implementing a number n with code that repeats the action of calling a proc n times.</p>
 
 {% highlight ruby %}
 def one(proc, x)
@@ -41,7 +41,7 @@ end
 
 {% endhighlight %}
 
-<h4>All of these implementations can be translated into methodless representations; for example, we can replace the method #one with a proc which takes two arguments and then calls the first argument with the second one. They look like this:</h4>
+<p>All of these implementations can be translated into methodless representations; for example, we can replace the method #one with a proc which takes two arguments and then calls the first argument with the second one. They look like this:</p>
 
 {% highlight ruby %}
 ZERO  = -> p { -> x {       x    } }

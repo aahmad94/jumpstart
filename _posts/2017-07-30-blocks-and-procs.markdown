@@ -12,9 +12,9 @@ greeting = Proc.new { |name| "Hello #{name}" }
 greeting.call("Adeel") # => "Hello Adeel"
 {% endhighlight %}
 
-<h4>
+<p>
 When defining a method that has a proc as a parameter the proc (object) cannot access the other parameters for that method unless the proc explicitly calls that value when the method is defined:
-</h4>
+</p>
 
 {% highlight ruby %}
 proc_add_1 = Proc.new { |num| num + 1 }
@@ -40,9 +40,9 @@ end
 chain_blocks(1, proc_add_1, proc_add_2) { |num| num + 3 } # => 7
 {% endhighlight %}
 
-<h4>
+<p>
 Ruby gives us a shortcut for when passing blocks with a single argument. When #to_proc or, when applicable, the shorthand #& are called on a symbol, we get back a block that calls the method with the same name as the symbol:
-</h4>
+</p>
 
 {% highlight ruby %}
 ["a", "b", "c"].map { |s| s.upcase } # => ["A", "B", "C"]
@@ -73,7 +73,7 @@ symbolic_proc.call("ABCD") #=> ["A", "D"]
 ["Hello", "Goodbye"].map(&:first_and_last) # => [["H", "o"], ["G", "e"]]
 {% endhighlight %}
 
-<h4>
+<p>
 The & can be tricky because it does several things:<br>
 <ol>
   <li>Converts blocks to procs</li>
@@ -81,7 +81,7 @@ The & can be tricky because it does several things:<br>
   <li>Converts procs to blocks</li>
 </ol>
 Assume we have a method my_sort! that takes a block argument, like this:
-</h4>
+</p>
 
 {% highlight ruby %}
 animals = ['cats', 'dog', 'badgers']
@@ -91,9 +91,9 @@ end
 animals # => ['dog', 'cats', 'badgers']
 {% endhighlight %}
 
-<h4>
+<p>
   We can easily define a non-bang version of this method like so:
-</h4>
+</p>
 
 {% highlight ruby %}
 class Array
@@ -103,17 +103,17 @@ class Array
 end
 {% endhighlight %}
 
-<h4>
+<p>
   The two uses of & in the above example do different things: the first one calls #to_proc on a block argument, creating a first-class proc object that we can refer to with prc. But #my_sort! expects a block argument, not a proc, so we can't simply pass it prc. Instead, when we call #my_sort!, we use & again, but this time & means the opposite of what it meant in the previous line; now & is changing the proc back into a block.
-</h4>
+</p>
 
-<h4>
+<p>
 What are lambdas and how are they different from procs?
-</h4>
+</p>
 
-<h4>
+<p>
 <strong>1.</strong> When a lambda expects an argument, you need to pass those arguments or an exception will be thrown. However, in the case of the Proc, if the argument is not passed it automatically defaults to nil.
-</h4>
+</p>
 
 {% highlight ruby %}
 # there are two lambda notation:
@@ -131,9 +131,9 @@ my_proc.call("John") # => "Hello John"
 my_proc.call # => "Hello"
 {% endhighlight %}
 
-<h4>
+<p>
 <strong>2.</strong> When a lambda encounters a return statement it will return execution to the enclosing method.<i> However, when a Proc encounters a return statement it will jump out of itself, as well as the enclosing method.</i>
-</h4>
+</p>
 
 {% highlight ruby %}
 def lambda_method
