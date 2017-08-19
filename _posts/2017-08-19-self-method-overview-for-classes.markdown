@@ -6,7 +6,7 @@ date: 2017-08-03 18:00:00
 
 <h4>We’ll explore a few simple rules that will clarify both the definition and the relationship of self in the context of its use in ruby classes.</h4>
 
-<h4><strong>1. </strong>Use self when setting/getting instance attributes inside a class definition.</h4>
+<p><strong>1. </strong>Use self when setting/getting instance attributes inside a class definition.</p>
 
 {% highlight ruby %}
 class Hash
@@ -56,7 +56,7 @@ end
   => undefined method 'sing' for Singable:Module (NoMethodError)
 {% endhighlight %}
 
-<h4><strong>2. </strong>Use self to denote a method within the class definition as a class method.</h4>
+<p><strong>2. </strong>Use self to denote a method within the class definition as a class method.</p>
 
 {% highlight ruby %}
 class Foo
